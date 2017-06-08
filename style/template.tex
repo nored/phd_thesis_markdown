@@ -24,7 +24,6 @@ $endif$
 \usepackage{caption}
 \usepackage{tocloft}
 % TP: end hack
-
 $if(linestretch)$
 \usepackage{setspace}
 \setstretch{$linestretch$}
@@ -113,6 +112,20 @@ $endif$
 \else
   \usepackage[unicode=true]{hyperref}
 \fi
+% Variables for convenience
+\IfFileExists{source/settings.tex}{%
+\input{source/settings.tex}
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={\thesisauthor},
+            pdftitle={\thesistitle},
+            pdfsubject={\thesissubject},
+            colorlinks=true,
+            citecolor=$if(citecolor)$$citecolor$$else$blue$endif$,
+            urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
+            linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
+            pdfborder={0 0 0}}
+}{
 \hypersetup{breaklinks=true,
             bookmarks=true,
             pdfauthor={$author-meta$},
@@ -121,7 +134,9 @@ $endif$
             citecolor=$if(citecolor)$$citecolor$$else$blue$endif$,
             urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
             linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
-            pdfborder={0 0 0}}
+            pdfborder={0 0 0}}  
+}
+
 \urlstyle{same}  % don't use monospace font for urls
 $if(links-as-notes)$
 % Make links footnotes instead of hotlinks:
@@ -146,7 +161,9 @@ $endif$
 $if(lang)$
 \ifxetex
   \usepackage{polyglossia}
-  \setmainlanguage{$mainlang$}
+  \setdefaultlanguage[spelling=new]{german}
+  \usepackage[german]{translator}
+  \usepackage{pgfgantt}
 \else
   \usepackage[$lang$]{babel}
 \fi

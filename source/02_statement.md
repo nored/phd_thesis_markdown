@@ -1,10 +1,22 @@
+\leavevmode\thispagestyle{empty}\newpage
 <!-- This page is for an official declaration. -->
 
+#   {.unnumbered}
 
 \vspace*{\fill}
+
+\textsf{\textbf{\large Selbstständigkeitserklärung\vspace{1.7cm}}}
+
 \noindent
-\textit{
-I, AUTHORNAME confirm that the work presented in this thesis is my own. Where information has been derived from other sources, I confirm that this has been indicated in the thesis.
+\textit{Hiermit erkläre ich, dass ich die vorliegende Arbeit vollkommen selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt, sowie Zitate kenntlich gemacht habe. Die Arbeit wurde in dieser oder ähnlicher Form noch keiner anderen Prüfungsbehörde vorgelegt.
+\vspace{0.7cm}
+\noindent \\Brandenburg/Havel, den \filingdate 
 }
+
+\vspace{1.7cm}
+
+
+\noindent Unterschrift 
 \vspace*{\fill}
 \pagenumbering{gobble}
+

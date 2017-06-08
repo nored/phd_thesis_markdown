@@ -1,12 +1,12 @@
 
-
 % Table of contents formatting
-\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
 \setcounter{tocdepth}{3}
 
 % Headers and page numbering
 \usepackage{fancyhdr}
-\pagestyle{plain}
+\pagestyle{fancy}
+\lhead{\includegraphics[scale=0.35]{style/th_brb_logo_s.eps}}
 
 % Following package is used to add background image to front page
 \usepackage{wallpaper}
@@ -20,7 +20,7 @@
 % add some \clearpage
 
 % % Chapter header
-% \usepackage{titlesec, blindtext, color}
+\usepackage{titlesec, blindtext, color}
 % \definecolor{gray75}{gray}{0.75}
 % \newcommand{\hsp}{\hspace{20pt}}
 % \titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
