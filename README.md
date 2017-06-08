@@ -1,3 +1,12 @@
+# Ein Template zum Schreiben der Bachelor-/Master- Arbeit in Markdown.
+
+Komplett auf Deutsch umgebaut und dem Template der TH-Brandenburg nachempfunden.
+
+Zitate im APA-Style `[@bibkey S. 22-23]`
+
+Alle wichtigen Variablen befinden sich in der source/settings.tex
+
+
 # Template for writing a PhD thesis in Markdown [![Build Status](https://travis-ci.org/tompollard/phd_thesis_markdown.svg?branch=master)](https://travis-ci.org/tompollard/phd_thesis_markdown)  
 
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.58490.svg)](http://dx.doi.org/10.5281/zenodo.58490)
